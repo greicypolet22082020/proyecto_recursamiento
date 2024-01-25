@@ -1,0 +1,183 @@
+
+/*Aquí coloca las fuentes a importar para tu página*/
+@import url('https://fonts.googleapis.com/css2?family=Meie+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@keyframes stroke-offset {100% {stroke-dashoffset:  -35%;}}
+html,
+body {
+  height: 100%;
+  font-weight: 800;
+}
+
+/*Asigna en background un color de fondo y el tipo de letra que hayas importado*/
+body {
+  background-size: cover;
+  
+  font-family: 'Courgette', cursive;
+
+}
+
+svg {
+  display: block;
+  /*Asigna entre las comillas el tipo de letra para el encabezado*/
+  font: 180px "Meie Script, cursive";
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  letter-spacing: 10px;
+  
+}
+/*Para las siguientes clases en la propiedad stroke asigna un color diferente para cada clase .text-copy*/
+.text-copy {
+  fill: none;
+  stroke: black;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+.text-copy:nth-child(1) {
+  stroke: MediumSlateBlue;
+  animation-delay: -1;
+}
+.text-copy:nth-child(2) {
+  stroke: DeepSkyBlue;
+  animation-delay: -2s;
+}
+.text-copy:nth-child(3) {
+  stroke: Magenta;
+  animation-delay: -3s;
+}
+.text-copy:nth-child(4) {
+  stroke: Yellow;
+  animation-delay: -4s;
+}
+.text-copy:nth-child(5) {
+  stroke: LimeGreen;
+  animation-delay: -5s;
+}
+
+/* Para las clases izquierda y derecha verifica la propiedad background-size y 
+asigna un valor que permita visualizar correctamente la imagen de fondo del contenedor. (contain/cover)*/
+.izquierda {
+  float: left;
+  clear: left;
+  background-size:contain ;
+}
+
+.derecha {
+  float: right;
+  clear: right;
+  background-size:contain ;
+}
+
+/*Asigna un color de letra que se visualice correctamente*/
+div a {
+  text-decoration: none;
+  color: DeepSkyBlue;
+}
+div a :active {
+  color:DeepSkyBlue;
+}
+div a :visited {
+  color:DeepSkyBlue;
+}
+div a :link {
+  color:DeepSkyBlue;
+}
+
+/*Elige un tamaño adecuado para la visualización de la imagen de cada receta*/
+img {
+  width: 400px;
+}
+
+/*Asigna un color diferente para el borde superior de cada receta*/
+.menu.categoria1 {
+  border-top: LightCoral 10px solid;
+}
+.menu.categoria2 {
+  border-top: HotPink 10px solid;
+}
+.menu.categoria3 {
+  border-top: Tomato 10px solid;
+}
+.menu.categoria4 {
+  border-top: Violet 10px solid;
+}
+
+/*Asigna color y uno de los tipos de letra que hayas importado*/
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  padding-top: 0px;
+  font-size: 50px;
+  text-align: center;
+}
+
+div {
+  font-size: 80px;
+  width: 40%;
+  margin: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#categorias{
+  width: 85%;
+  padding-left: 90px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  width: 25%;
+}
+
+.menu {
+  display: block;
+  position: relative;
+  height: 200px;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-size: 30px;
+}
+
+.menu:after {
+  content: attr(data-title);
+  width: 100%;
+  background: black;
+  color: white;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.arriba {
+  float: initial;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+li a {
+  display: inline;
+  float: left;
+  text-decoration: none;
+  font-family: sans;
+}
+
+ol {
+  text-align: left;
+  padding-left: 500px;
+  font-size: 20px;
+}
